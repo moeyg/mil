@@ -6,7 +6,6 @@ import clock from './icons/clock.svg';
 import home from './icons/home.svg';
 import like from './icons/like.svg';
 import loop from './icons/loop.svg';
-import mic from './icons/mic.svg';
 import miniPlayer from './icons/mini-player.svg';
 import next from './icons/next.svg';
 import pause from './icons/pause.svg';
@@ -14,10 +13,8 @@ import play from './icons/play.svg';
 import playList from './icons/play-list.svg';
 import plus from './icons/plus.svg';
 import prev from './icons/prev.svg';
-import queue from './icons/queue.svg';
 import search from './icons/search.svg';
 import shuffle from './icons/shuffle.svg';
-import speaker from './icons/speaker.svg';
 import stack from './icons/stack.svg';
 import volume from './icons/volume.svg';
 import zoom from './icons/zoom.svg';
@@ -75,7 +72,6 @@ interface Icons {
   home: string;
   like: string;
   loop: string;
-  mic: string;
   miniPlayer: string;
   next: string;
   pause: string;
@@ -83,10 +79,8 @@ interface Icons {
   play: string;
   plus: string;
   prev: string;
-  queue: string;
   search: string;
   shuffle: string;
-  speaker: string;
   stack: string;
   volume: string;
   zoom: string;
@@ -101,7 +95,6 @@ export const icons: Icons = {
   home,
   like,
   loop,
-  mic,
   miniPlayer,
   next,
   pause,
@@ -109,10 +102,8 @@ export const icons: Icons = {
   play,
   plus,
   prev,
-  queue,
   search,
   shuffle,
-  speaker,
   stack,
   volume,
   zoom,
