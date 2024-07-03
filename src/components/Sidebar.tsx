@@ -5,11 +5,11 @@ const Sidebar: React.FC = () => {
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
       <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
-        <div className='flex item-center gap-3 pl-8 cursor-pointer'>
+        <div className='flex item-center gap-3 pl-3 cursor-pointer'>
           <img className='w-6' src={icons.home} alt='홈' />
           <strong className='font-bold'>홈</strong>
         </div>
-        <div className='flex item-center gap-3 pl-8 cursor-pointer'>
+        <div className='flex item-center gap-3 pl-3 cursor-pointer'>
           <img className='w-6' src={icons.search} alt='검색' />
           <strong className='font-bold'>검색</strong>
         </div>
