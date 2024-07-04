@@ -112,10 +112,10 @@ export const icons: Icons = {
 export const albumsData: AlbumsData[] = [
   {
     id: 0,
-    name: 'Top 50 Global',
-    image: top50,
-    desc: 'Top 50 Global',
-    bgColor: '#004AAD',
+    name: 'Viral 50 Global',
+    image: viral50,
+    desc: 'Your weekly update of the most played tracks',
+    bgColor: '#FFA592',
   },
   {
     id: 1,
@@ -126,10 +126,10 @@ export const albumsData: AlbumsData[] = [
   },
   {
     id: 2,
-    name: 'Trending Korea',
-    image: trendingKorea,
-    desc: 'Trending Korea',
-    bgColor: '#0047A0',
+    name: 'Top 50 Global',
+    image: top50,
+    desc: 'Top 50 Global',
+    bgColor: '#004AAD',
   },
   {
     id: 3,
@@ -140,17 +140,17 @@ export const albumsData: AlbumsData[] = [
   },
   {
     id: 4,
+    name: 'Trending Korea',
+    image: trendingKorea,
+    desc: 'Trending Korea',
+    bgColor: '#0047A0',
+  },
+  {
+    id: 5,
     name: 'Mega Hits',
     image: megaHits,
     desc: 'Mega Hits',
     bgColor: '#773795',
-  },
-  {
-    id: 5,
-    name: 'Viral 50 Global',
-    image: viral50,
-    desc: 'Your weekly update of the most played tracks',
-    bgColor: '#FFA592',
   },
 ];
 
