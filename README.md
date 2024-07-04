@@ -39,10 +39,10 @@
     Watch: http://ncs.lnk.to/COYNAT/youtube
 
     7.
-    Song: Skybreak & Keepsake - Comet [NCS Release]
+    Song: Tollef - Time With You (feat. RVLE) [NCS Release]
     Music provided by NoCopyrightSounds
-    Free Download/Stream: http://ncs.io/Comet
-    Watch: http://ncs.lnk.to/CometAT/youtube
+    Free Download/Stream: http://ncs.io/TWU
+    Watch: AT/youtube
 
     8.
     Song: AC13 - Waves Ft. Comma Dee [NCS Release]

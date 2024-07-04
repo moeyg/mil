@@ -34,7 +34,7 @@ import album_alright from './albums/alright.jpg';
 import album_underrated from './albums/underrated.jpg';
 import album_pretty_afternoon from './albums/pretty_afternoon.jpg';
 import album_calling_out_your_name from './albums/calling_out_your_name.jpg';
-import album_comet from './albums/comet.jpg';
+import album_time_with_you from './albums/time_with_you.jpg';
 import album_sugar_plumbin from './albums/sugar_plumbin.jpg';
 import album_waves from './albums/waves.jpg';
 import album_twenty_five from './albums/twenty_five.jpg';
@@ -46,7 +46,7 @@ import song_alright from './songs/alright.mp3';
 import song_underrated from './songs/underrated.mp3';
 import song_pretty_afternoon from './songs/pretty_afternoon.mp3';
 import song_calling_out_your_name from './songs/calling_out_your_name.mp3';
-import song_comet from './songs/comet.mp3';
+import song_time_with_you from './songs/time_with_you.mp3';
 import song_sugar_plumbin from './songs/sugar_plumbin.mp3';
 import song_waves from './songs/waves.mp3';
 import song_twenty_five from './songs/twenty_five.mp3';
@@ -181,19 +181,19 @@ export const albumsData: AlbumsData[] = [
 export const songsData: SongsData[] = [
   {
     id: 0,
-    name: 'On & On',
-    image: album_onAndOn,
-    file: song_onAndOn,
-    desc: 'Cartoon, Jéja',
-    duration: '3:28',
+    name: 'Waves',
+    image: album_waves,
+    file: song_waves,
+    desc: 'AC13',
+    duration: '4:28',
   },
   {
     id: 1,
-    name: 'Nostalgia',
-    image: album_nostalgia,
-    file: song_nostalgia,
-    desc: 'Janji & Johnning',
-    duration: '2:56',
+    name: 'Time With You',
+    image: album_time_with_you,
+    file: song_time_with_you,
+    desc: 'Tollef, RVLE',
+    duration: '2:36',
   },
   {
     id: 2,
@@ -229,11 +229,11 @@ export const songsData: SongsData[] = [
   },
   {
     id: 6,
-    name: 'Comet',
-    image: album_comet,
-    file: song_comet,
-    desc: 'Skybreak, Keepsake',
-    duration: '3:50',
+    name: 'On & On',
+    image: album_onAndOn,
+    file: song_onAndOn,
+    desc: 'Cartoon, Jéja',
+    duration: '3:28',
   },
   {
     id: 7,
@@ -245,11 +245,11 @@ export const songsData: SongsData[] = [
   },
   {
     id: 8,
-    name: 'Waves',
-    image: album_waves,
-    file: song_waves,
-    desc: 'AC13',
-    duration: '4:28',
+    name: 'Nostalgia',
+    image: album_nostalgia,
+    file: song_nostalgia,
+    desc: 'Janji & Johnning',
+    duration: '2:56',
   },
   {
     id: 9,
