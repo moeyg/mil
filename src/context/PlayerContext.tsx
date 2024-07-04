@@ -116,7 +116,7 @@ const PlayerContextProvider: React.FC<PlayerContextProviderProps> = ({
   };
 
   useEffect(() => {
-    const updateSliderAndTime = () => {
+    const updateBarAndTime = () => {
       if (audioRef.current && seekBar.current) {
         const currentTime = audioRef.current.currentTime;
         const duration = audioRef.current.duration;
@@ -141,12 +141,12 @@ const PlayerContextProvider: React.FC<PlayerContextProviderProps> = ({
     };
 
     if (audioRef.current) {
-      audioRef.current.addEventListener('timeupdate', updateSliderAndTime);
+      audioRef.current.addEventListener('timeupdate', updateBarAndTime);
     }
 
     return () => {
       if (audioRef.current) {
-        audioRef.current.removeEventListener('timeupdate', updateSliderAndTime);
+        audioRef.current.removeEventListener('timeupdate', updateBarAndTime);
       }
     };
   }, [audioRef, seekBar, setTime]);
