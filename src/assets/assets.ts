@@ -19,22 +19,22 @@ import stack from './icons/stack.svg';
 import volume from './icons/volume.svg';
 import zoom from './icons/zoom.svg';
 
-import megaHits from './albums/mega-hits.svg';
-import trendingGlobal from './albums/trending-global.svg';
-import trendingKorea from './albums/trending-korea.svg';
-import top50 from './albums/top50.svg';
-import top100 from './albums/top100.svg';
-import viral50 from './albums/viral50.svg';
+import megaHits from './albums/mega-hits.png';
+import trendingGlobal from './albums/trending-global.png';
+import trendingKorea from './albums/trending-korea.png';
+import top50 from './albums/top50.png';
+import top100 from './albums/top100.png';
+import viral50 from './albums/viral50.png';
 
-import album_amalgam from './albums/amalgam.svg';
-import album_inThisLife from './albums/in-this-life.svg';
-import album_betterDay from './albums/better-day.svg';
-import album_mood1 from './albums/mood-1.svg';
-import album_islandBreeze from './albums/island-breeze.svg';
-import album_flow from './albums/flow.svg';
-import album_onceInParis from './albums/once-in-paris.svg';
-import album_noPlaceToGo from './albums/no-place-to-go.svg';
-import album_joyrideJamboree from './albums/joyride-jamboree.svg';
+import album_amalgam from './albums/amalgam.png';
+import album_inThisLife from './albums/in-this-life.png';
+import album_betterDay from './albums/better-day.png';
+import album_mood1 from './albums/mood-1.png';
+import album_islandBreeze from './albums/island-breeze.png';
+import album_flow from './albums/flow.png';
+import album_onceInParis from './albums/once-in-paris.png';
+import album_noPlaceToGo from './albums/no-place-to-go.png';
+import album_joyrideJamboree from './albums/joyride-jamboree.png';
 
 import song_amalgam from './songs/amalgam.mp3';
 import song_inThisLife from './songs/in-this-life.mp3';
