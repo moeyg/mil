@@ -1,4 +1,4 @@
-# MIL: Music Is Life
+# MIL: Music Is Life ♪
 
 ## Music Copyright
 
@@ -65,3 +65,15 @@
     Music provided by NoCopyrightSounds
     Free Download/Stream: http://ncs.io/TalkAbout
     Watch: http://ncs.lnk.to/TalkAboutAT/youtube
+
+    12.
+    Song: OSKI - What's The Problem? [NCS Release]
+    Music provided by NoCopyrightSounds
+    Free Download/Stream: http://ncs.io/WTP
+    Watch: http://ncs.lnk.to/WTPAT/youtube
+
+    13.
+    Song: Daniel Levi - Getaway [NCS Release]
+    Music provided by NoCopyrightSounds
+    Free Download/Stream: http://ncs.io/Getaway
+    Watch: http://ncs.io/GetawayAT/youtube

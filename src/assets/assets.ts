@@ -39,6 +39,8 @@ import album_sugar_plumbin from './albums/sugar_plumbin.jpg';
 import album_waves from './albums/waves.jpg';
 import album_twenty_five from './albums/twenty_five.jpg';
 import album_talk_about from './albums/talk_about.jpg';
+import album_WTP from './albums/WTP.jpg';
+import album_getaway from './albums/getaway.jpg';
 
 import song_onAndOn from './songs/onAndOn.mp3';
 import song_nostalgia from './songs/nostalgia.mp3';
@@ -51,6 +53,8 @@ import song_sugar_plumbin from './songs/sugar_plumbin.mp3';
 import song_waves from './songs/waves.mp3';
 import song_twenty_five from './songs/twenty_five.mp3';
 import song_talk_about from './songs/talk_about.mp3';
+import song_WTP from './songs/WTP.mp3';
+import song_getaway from './songs/getaway.mp3';
 
 interface AlbumsData {
   id: number;
@@ -181,11 +185,11 @@ export const albumsData: AlbumsData[] = [
 export const songsData: SongsData[] = [
   {
     id: 0,
-    name: 'Waves',
-    image: album_waves,
-    file: song_waves,
-    desc: 'AC13',
-    duration: '4:28',
+    name: "What's The Problem?",
+    image: album_WTP,
+    file: song_WTP,
+    desc: 'OSKI',
+    duration: '2:28',
   },
   {
     id: 1,
@@ -197,6 +201,23 @@ export const songsData: SongsData[] = [
   },
   {
     id: 2,
+    name: 'Sugar Plumbin',
+    image: album_sugar_plumbin,
+    file: song_sugar_plumbin,
+    desc: 'Reece Taylor',
+    duration: '2:07',
+  },
+  {
+    id: 3,
+    name: 'Getaway',
+    image: album_getaway,
+    file: song_getaway,
+    desc: 'Daniel Levi',
+    duration: '4:02',
+  },
+
+  {
+    id: 3,
     name: 'Alright',
     image: album_alright,
     file: song_alright,
@@ -237,11 +258,11 @@ export const songsData: SongsData[] = [
   },
   {
     id: 7,
-    name: 'Sugar Plumbin',
-    image: album_sugar_plumbin,
-    file: song_sugar_plumbin,
-    desc: 'Reece Taylor',
-    duration: '2:07',
+    name: 'Waves',
+    image: album_waves,
+    file: song_waves,
+    desc: 'AC13',
+    duration: '4:28',
   },
   {
     id: 8,
