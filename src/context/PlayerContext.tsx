@@ -33,6 +33,7 @@ interface PlayerContextType {
   playSelectedSong: (id: number) => void;
   previous: () => void;
   next: () => void;
+  seekTo: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
 interface PlayerContextProviderProps {
@@ -87,7 +88,7 @@ const PlayerContextProvider: React.FC<PlayerContextProviderProps> = ({
   };
 
   const next = async () => {
-    if (track.id > 0) {
+    if (track.id >= 0) {
       await setTrack(songsData[track.id + 1]);
       if (audioRef.current) {
         await audioRef.current.play();
@@ -102,6 +103,16 @@ const PlayerContextProvider: React.FC<PlayerContextProviderProps> = ({
       await audioRef.current.play();
     }
     setPlayStatus(true);
+  };
+
+  const seekTo = async (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    if (audioRef.current && trackLength.current) {
+      audioRef.current.currentTime =
+        (event.nativeEvent.offsetX / trackLength.current.offsetWidth) *
+        audioRef.current.duration;
+    }
   };
 
   useEffect(() => {
@@ -155,6 +166,7 @@ const PlayerContextProvider: React.FC<PlayerContextProviderProps> = ({
     playSelectedSong,
     previous,
     next,
+    seekTo,
   };
 
   return (

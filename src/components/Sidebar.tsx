@@ -1,11 +1,17 @@
 import React from 'react';
 import { icons } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
       <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
-        <div className='flex item-center gap-3 pl-4 cursor-pointer'>
+        <div
+          onClick={() => navigate('/')}
+          className='flex item-center gap-3 pl-4 cursor-pointer'
+        >
           <img className='w-6' src={icons.home} alt='홈' />
           <strong className='font-bold'>홈</strong>
         </div>

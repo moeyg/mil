@@ -4,16 +4,29 @@ import { Slider } from '@mui/material';
 import { PlayerContext, Time } from '../context/PlayerContext';
 
 const Player: React.FC = () => {
-  const { trackLength, seekBar, play, pause, playStatus, track, time } =
-    useContext(PlayerContext) as {
-      trackLength: RefObject<HTMLDivElement>;
-      seekBar: RefObject<HTMLDivElement>;
-      play: () => void;
-      pause: () => void;
-      playStatus: boolean;
-      track: (typeof songsData)[0];
-      time: Time;
-    };
+  const {
+    trackLength,
+    seekBar,
+    play,
+    pause,
+    playStatus,
+    track,
+    time,
+    previous,
+    next,
+    seekTo,
+  } = useContext(PlayerContext) as {
+    trackLength: RefObject<HTMLDivElement>;
+    seekBar: RefObject<HTMLDivElement>;
+    play: () => void;
+    pause: () => void;
+    playStatus: boolean;
+    track: (typeof songsData)[0];
+    time: Time;
+    previous: () => void;
+    next: () => void;
+    seekTo: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  };
 
   return (
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
@@ -28,6 +41,7 @@ const Player: React.FC = () => {
         <div className='flex gap-5'>
           <img className='w-5 cursor-pointer' src={icons.shuffle} alt='셔플' />
           <img
+            onClick={previous}
             className='w-5 cursor-pointer'
             src={icons.prev}
             alt='이전 노래'
@@ -48,6 +62,7 @@ const Player: React.FC = () => {
             />
           )}
           <img
+            onClick={next}
             className='w-5 cursor-pointer'
             src={icons.next}
             alt='다음 노래'
@@ -64,6 +79,7 @@ const Player: React.FC = () => {
           </p>
           <div
             ref={trackLength}
+            onClick={seekTo}
             className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'
           >
             <div
