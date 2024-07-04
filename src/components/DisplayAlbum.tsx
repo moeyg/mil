@@ -8,8 +8,6 @@ const DisplayAlbum: React.FC = () => {
   const albumID = Number(id);
   const albumData = albumsData[albumID];
 
-  console.log(albumData);
-
   return (
     <>
       <Navigation />
