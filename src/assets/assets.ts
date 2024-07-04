@@ -201,7 +201,7 @@ export const songsData: SongsData[] = [
   },
   {
     id: 2,
-    name: 'Sugar Plumbin',
+    name: "Sugar Plumbin'",
     image: album_sugar_plumbin,
     file: song_sugar_plumbin,
     desc: 'Reece Taylor',
@@ -217,7 +217,7 @@ export const songsData: SongsData[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: 'Alright',
     image: album_alright,
     file: song_alright,
@@ -225,7 +225,7 @@ export const songsData: SongsData[] = [
     duration: '3:15',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Underrated',
     image: album_underrated,
     file: song_underrated,
@@ -233,7 +233,7 @@ export const songsData: SongsData[] = [
     duration: '3:42',
   },
   {
-    id: 4,
+    id: 6,
     name: 'Pretty afternoon',
     image: album_pretty_afternoon,
     file: song_pretty_afternoon,
@@ -241,7 +241,7 @@ export const songsData: SongsData[] = [
     duration: '2:38',
   },
   {
-    id: 5,
+    id: 7,
     name: 'Calling Out Your Name',
     image: album_calling_out_your_name,
     file: song_calling_out_your_name,
@@ -249,7 +249,7 @@ export const songsData: SongsData[] = [
     duration: '3:54',
   },
   {
-    id: 6,
+    id: 8,
     name: 'On & On',
     image: album_onAndOn,
     file: song_onAndOn,
@@ -257,7 +257,7 @@ export const songsData: SongsData[] = [
     duration: '3:28',
   },
   {
-    id: 7,
+    id: 9,
     name: 'Waves',
     image: album_waves,
     file: song_waves,
@@ -265,7 +265,7 @@ export const songsData: SongsData[] = [
     duration: '4:28',
   },
   {
-    id: 8,
+    id: 10,
     name: 'Nostalgia',
     image: album_nostalgia,
     file: song_nostalgia,
@@ -273,7 +273,7 @@ export const songsData: SongsData[] = [
     duration: '2:56',
   },
   {
-    id: 9,
+    id: 11,
     name: 'twenty five',
     image: album_twenty_five,
     file: song_twenty_five,
@@ -281,7 +281,7 @@ export const songsData: SongsData[] = [
     duration: '3:18',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Talk about',
     image: album_talk_about,
     file: song_talk_about,

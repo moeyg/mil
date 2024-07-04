@@ -27,7 +27,7 @@ const DisplayHome: React.FC = () => {
 
       <div className='mb-4'>
         <h1 className='mt-7 mb-2 font-bold text-2xl'>
-          아가씨, 이제 음악 감상 시간이에요. 🎧
+          아가씨, 이제 음악 감상 하실 시간이에요. 🎧
         </h1>
         <div className='flex overflow-auto'>
           {songsData.map((song) => (

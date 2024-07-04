@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navigation from './Navigation';
 import { useParams } from 'react-router-dom';
 import { albumsData, icons, songsData } from '../assets/assets';
+import { PlayerContext } from '../context/PlayerContext';
 
 const DisplayAlbum: React.FC = () => {
   const { id } = useParams<string>();
   const albumID = Number(id);
   const albumData = albumsData[albumID];
+  const { playSelectedSong } = useContext(PlayerContext) as {
+    playSelectedSong: (id: number) => void;
+  };
 
   return (
     <>
@@ -56,11 +60,12 @@ const DisplayAlbum: React.FC = () => {
       <hr />
       {songsData.map((song, index) => (
         <div
+          onClick={() => playSelectedSong(song.id)}
           key={index}
-          className='grid grid-cols-3 sm:grid-cols-4 mt-10 mb-4 pl-2 items-center text-[#a7a7a7] hover:[#ffffff2b]'
+          className='grid grid-cols-3 sm:grid-cols-4 mt-8 mb-2 p-4 items-center text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer'
         >
           <p className='text-white'>
-            <b className='mr-4 text-[#a7a7a7]'>{index + 1}</b>
+            <b className=' mr-4 text-[#a7a7a7]'>{index + 1}</b>
             <img
               className='hidden md:inline w-10 mr-3'
               src={song.image}

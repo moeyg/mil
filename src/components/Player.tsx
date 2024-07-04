@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useContext, RefObject } from 'react';
 import { icons, songsData } from '../assets/assets';
 import { Slider } from '@mui/material';
+import { PlayerContext, Time } from '../context/PlayerContext';
 
 const Player: React.FC = () => {
+  const { trackLength, seekBar, play, pause, playStatus, track, time } =
+    useContext(PlayerContext) as {
+      trackLength: RefObject<HTMLDivElement>;
+      seekBar: RefObject<HTMLDivElement>;
+      play: () => void;
+      pause: () => void;
+      playStatus: boolean;
+      track: (typeof songsData)[0];
+      time: Time;
+    };
+
   return (
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
-      <div className='hidden lg:flex items-center gap-4'>
-        <img
-          className='w-12'
-          src={songsData[0].image}
-          alt={songsData[0].name}
-        />
+      <div className='w-[20%] hidden lg:flex items-center gap-4'>
+        <img className='w-12' src={track.image} alt={track.name} />
         <div>
-          <p>{songsData[0].name}</p>
-          <p>{songsData[0].desc}</p>
+          <p>{track.name}</p>
+          <p>{track.desc}</p>
         </div>
       </div>
       <div className='flex flex-col items-center gap-1 m-auto'>
@@ -24,7 +32,21 @@ const Player: React.FC = () => {
             src={icons.prev}
             alt='이전 노래'
           />
-          <img className='w-5 cursor-pointer' src={icons.play} alt='재생' />
+          {playStatus ? (
+            <img
+              onClick={pause}
+              className='w-5 cursor-pointer'
+              src={icons.pause}
+              alt='일시정지'
+            />
+          ) : (
+            <img
+              onClick={play}
+              className='w-5 cursor-pointer'
+              src={icons.play}
+              alt='재생'
+            />
+          )}
           <img
             className='w-5 cursor-pointer'
             src={icons.next}
@@ -37,11 +59,21 @@ const Player: React.FC = () => {
           />
         </div>
         <div className='flex items-center gap-5'>
-          <p>{songsData[0].duration}</p>
-          <div className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
-            <hr className='h-1 border-none w-0 bg-[#056AF6] rounded-full' />
+          <p>
+            {time.currentTime.minute}:{time.currentTime.second}
+          </p>
+          <div
+            ref={trackLength}
+            className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'
+          >
+            <div
+              ref={seekBar}
+              className='h-1 border-none w-0 bg-[#056AF6] rounded-full'
+            />
           </div>
-          <p>{songsData[0].duration}</p>
+          <p>
+            {time.totalTime.minute}:{time.totalTime.second}
+          </p>
         </div>
       </div>
       <div className='w-[13%] hidden lg:flex items-center gap-2'>
