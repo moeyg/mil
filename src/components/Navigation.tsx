@@ -1,17 +1,22 @@
 import React from 'react';
 import { icons } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className='w-full flex justify-between items-center font-semibold'>
         <div className='flex items-center gap-1'>
           <img
+            onClick={() => navigate(-1)}
             className='w-8 p-2 cursor-pointer'
             src={icons.arrow_left}
             alt='왼쪽 이동'
           />
           <img
+            onClick={() => navigate(1)}
             className='w-8 p-2 cursor-pointer'
             src={icons.arrow_right}
             alt='오른쪽 이동'
