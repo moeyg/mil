@@ -24,10 +24,7 @@ const Navigation: React.FC = () => {
           <p className='bg-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer'>
             앱 설치
           </p>
-          <img
-            className='w-10 h-10 rounded-full'
-            src='./src/assets/icons/profile.png'
-          />
+          <img className='w-10 h-10 rounded-full' src={icons.profile} />
         </div>
       </div>
       <div className='flex items-center gap-2 mt-4'>

@@ -19,6 +19,9 @@ import stack from './icons/stack.svg';
 import volume from './icons/volume.svg';
 import zoom from './icons/zoom.svg';
 
+import profile from './icons/profile.png';
+import logo from './icons/logo.svg';
+
 import megaHits from './albums/mega-hits.png';
 import trendingGlobal from './albums/trending-global.png';
 import trendingKorea from './albums/trending-korea.png';
@@ -52,6 +55,8 @@ interface AlbumsData {
   image: string;
   desc: string;
   bgColor: string;
+  likes: string;
+  duration: string;
 }
 
 interface SongsData {
@@ -84,6 +89,8 @@ interface Icons {
   stack: string;
   volume: string;
   zoom: string;
+  profile: string;
+  logo: string;
 }
 
 export const icons: Icons = {
@@ -107,6 +114,8 @@ export const icons: Icons = {
   stack,
   volume,
   zoom,
+  profile,
+  logo,
 };
 
 export const albumsData: AlbumsData[] = [
@@ -115,14 +124,18 @@ export const albumsData: AlbumsData[] = [
     name: 'Viral 50 Global',
     image: viral50,
     desc: 'Viral 50 Global',
-    bgColor: '#FFA592',
+    bgColor: '#00BF63',
+    likes: '4, 345, 050',
+    duration: '3h 30min',
   },
   {
     id: 1,
     name: 'Top 100 Global',
     image: top100,
     desc: 'Top 100 Global',
-    bgColor: '#737373',
+    bgColor: '#3533CD',
+    likes: '4, 723, 270',
+    duration: '7h 45min',
   },
   {
     id: 2,
@@ -130,6 +143,8 @@ export const albumsData: AlbumsData[] = [
     image: top50,
     desc: 'Top 50 Global',
     bgColor: '#004AAD',
+    likes: '9, 885, 123',
+    duration: '3h 57min',
   },
   {
     id: 3,
@@ -137,6 +152,8 @@ export const albumsData: AlbumsData[] = [
     image: trendingGlobal,
     desc: 'Trending Global',
     bgColor: '#101820',
+    likes: '7, 124, 185',
+    duration: '2h 30min',
   },
   {
     id: 4,
@@ -144,6 +161,8 @@ export const albumsData: AlbumsData[] = [
     image: trendingKorea,
     desc: 'Trending Korea',
     bgColor: '#0047A0',
+    likes: '1, 983, 888',
+    duration: '3h 43min',
   },
   {
     id: 5,
@@ -151,6 +170,8 @@ export const albumsData: AlbumsData[] = [
     image: megaHits,
     desc: 'Mega Hits',
     bgColor: '#773795',
+    likes: '4, 345, 050',
+    duration: '7h 37min',
   },
 ];
 
