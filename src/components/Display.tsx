@@ -12,10 +12,12 @@ const Display: React.FC = () => {
   const backgroundColor = albumsData[Number(albumID)].bgColor;
 
   useEffect(() => {
-    if (isAlbum) {
-      displayRef.current.style.background = `linear-gradient(${backgroundColor}, #121212)`;
-    } else {
-      displayRef.current.style.background = `#121212`;
+    if (displayRef.current) {
+      if (isAlbum) {
+        displayRef.current.style.background = `linear-gradient(${backgroundColor}, #121212)`;
+      } else {
+        displayRef.current.style.background = `#121212`;
+      }
     }
   });
 
