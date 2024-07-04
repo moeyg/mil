@@ -114,7 +114,7 @@ export const albumsData: AlbumsData[] = [
     id: 0,
     name: 'Viral 50 Global',
     image: viral50,
-    desc: 'Your weekly update of the most played tracks',
+    desc: 'Viral 50 Global',
     bgColor: '#FFA592',
   },
   {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { icons, songsData } from '../assets/assets';
+import { Slider } from '@mui/material';
 
 const Player: React.FC = () => {
   return (
@@ -38,17 +39,31 @@ const Player: React.FC = () => {
         <div className='flex items-center gap-5'>
           <p>{songsData[0].duration}</p>
           <div className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
-            <hr className='h-1 border-none w-0 bg-indigo-600 rounded-full' />
+            <hr className='h-1 border-none w-0 bg-[#056AF6] rounded-full' />
           </div>
           <p>{songsData[0].duration}</p>
         </div>
       </div>
-      <div className='hidden lg:flex items-center gap-2 opacity-75'>
-        <img className='w-5' src={icons.playList} alt='플레이 리스트' />
-        <img className='w-5' src={icons.volume} alt='음량' />
-        <div className='w-14 bg-slate-50 h-1 rounded'></div>
-        <img className='w-5' src={icons.miniPlayer} alt='미니 플레이' />
-        <img className='w-5' src={icons.zoom} alt='확대' />
+      <div className='w-[13%] hidden lg:flex items-center gap-2'>
+        <img
+          className='w-5 cursor-pointer'
+          src={icons.playList}
+          alt='플레이 리스트'
+        />
+        <img className='w-5 cursor-pointer' src={icons.volume} alt='음량' />
+        <Slider
+          disabled
+          size='small'
+          defaultValue={50}
+          aria-label='Default'
+          valueLabelDisplay='auto'
+        />
+        <img
+          className='w-5 cursor-pointer'
+          src={icons.miniPlayer}
+          alt='미니 플레이'
+        />
+        <img className='w-5 cursor-pointer' src={icons.zoom} alt='확대' />
       </div>
     </div>
   );

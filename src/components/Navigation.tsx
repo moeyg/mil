@@ -3,7 +3,7 @@ import { icons } from '../assets/assets';
 
 const Navigation: React.FC = () => {
   return (
-    <nav>
+    <>
       <div className='w-full flex justify-between items-center font-semibold'>
         <div className='flex items-center gap-1'>
           <img
@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
             앱 설치
           </p>
           <img
-            className='w-7 h-7 rounded-full'
+            className='w-10 h-10 rounded-full'
             src='./src/assets/icons/profile.png'
           />
         </div>
@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
         <p className='text-white px-4 rounded-2xl cursor-pointer'>앨범</p>
         <p className='text-white px-4 rounded-2xl cursor-pointer'>팟캐스트</p>
       </div>
-    </nav>
+    </>
   );
 };
 
