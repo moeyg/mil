@@ -18,7 +18,6 @@ import shuffle from './icons/shuffle.svg';
 import stack from './icons/stack.svg';
 import volume from './icons/volume.svg';
 import zoom from './icons/zoom.svg';
-
 import profile from './icons/profile.png';
 import logo from './icons/logo.svg';
 
@@ -29,25 +28,29 @@ import top50 from './albums/top50.png';
 import top100 from './albums/top100.png';
 import viral50 from './albums/viral50.png';
 
-import album_amalgam from './albums/amalgam.png';
-import album_inThisLife from './albums/in-this-life.png';
-import album_betterDay from './albums/better-day.png';
-import album_mood1 from './albums/mood-1.png';
-import album_islandBreeze from './albums/island-breeze.png';
-import album_flow from './albums/flow.png';
-import album_onceInParis from './albums/once-in-paris.png';
-import album_noPlaceToGo from './albums/no-place-to-go.png';
-import album_joyrideJamboree from './albums/joyride-jamboree.png';
+import album_onAndOn from './albums/onAndOn.jpg';
+import album_nostalgia from './albums/nostalgia.jpg';
+import album_alright from './albums/alright.jpg';
+import album_underrated from './albums/underrated.jpg';
+import album_pretty_afternoon from './albums/pretty_afternoon.jpg';
+import album_calling_out_your_name from './albums/calling_out_your_name.jpg';
+import album_comet from './albums/comet.jpg';
+import album_sugar_plumbin from './albums/sugar_plumbin.jpg';
+import album_waves from './albums/waves.jpg';
+import album_twenty_five from './albums/twenty_five.jpg';
+import album_talk_about from './albums/talk_about.jpg';
 
-import song_amalgam from './songs/amalgam.mp3';
-import song_inThisLife from './songs/in-this-life.mp3';
-import song_betterDay from './songs/better-day.mp3';
-import song_mood1 from './songs/mood-1.mp3';
-import song_islandBreeze from './songs/island-breeze.mp3';
-import song_flow from './songs/flow.mp3';
-import song_onceInParis from './songs/once-in-paris.mp3';
-import song_noPlaceToGo from './songs/no-place-to-go.mp3';
-import song_joyrideJamboree from './songs/joyride-jamboree.mp3';
+import song_onAndOn from './songs/onAndOn.mp3';
+import song_nostalgia from './songs/nostalgia.mp3';
+import song_alright from './songs/alright.mp3';
+import song_underrated from './songs/underrated.mp3';
+import song_pretty_afternoon from './songs/pretty_afternoon.mp3';
+import song_calling_out_your_name from './songs/calling_out_your_name.mp3';
+import song_comet from './songs/comet.mp3';
+import song_sugar_plumbin from './songs/sugar_plumbin.mp3';
+import song_waves from './songs/waves.mp3';
+import song_twenty_five from './songs/twenty_five.mp3';
+import song_talk_about from './songs/talk_about.mp3';
 
 interface AlbumsData {
   id: number;
@@ -178,74 +181,90 @@ export const albumsData: AlbumsData[] = [
 export const songsData: SongsData[] = [
   {
     id: 0,
-    name: 'AMALGAM',
-    image: album_amalgam,
-    file: song_amalgam,
-    desc: 'Rockot',
-    duration: '4:14',
+    name: 'On & On',
+    image: album_onAndOn,
+    file: song_onAndOn,
+    desc: 'Cartoon, Jéja',
+    duration: '3:28',
   },
   {
     id: 1,
-    name: 'In this life',
-    image: album_inThisLife,
-    file: song_inThisLife,
-    desc: 'Wooster27',
-    duration: '2:58',
+    name: 'Nostalgia',
+    image: album_nostalgia,
+    file: song_nostalgia,
+    desc: 'Janji & Johnning',
+    duration: '2:56',
   },
   {
     id: 2,
-    name: 'Mood 1',
-    image: album_mood1,
-    file: song_mood1,
-    desc: 'AVIANSHo9',
-    duration: '2:35',
+    name: 'Alright',
+    image: album_alright,
+    file: song_alright,
+    desc: 'Avi Snow, Sync',
+    duration: '3:15',
   },
   {
     id: 3,
-    name: 'Island Breeze',
-    image: album_islandBreeze,
-    file: song_islandBreeze,
-    desc: 'Top-Flow',
-    duration: '1:30',
+    name: 'Underrated',
+    image: album_underrated,
+    file: song_underrated,
+    desc: 'Zushi & Vanko',
+    duration: '3:42',
   },
   {
     id: 4,
-    name: 'Flow',
-    image: album_flow,
-    file: song_flow,
-    desc: 'Loksii',
-    duration: '2:11',
+    name: 'Pretty afternoon',
+    image: album_pretty_afternoon,
+    file: song_pretty_afternoon,
+    desc: 'Andrah',
+    duration: '2:38',
   },
   {
     id: 5,
-    name: 'Better Day',
-    image: album_betterDay,
-    file: song_betterDay,
-    desc: 'penguinmusic',
-    duration: '1:30',
+    name: 'Calling Out Your Name',
+    image: album_calling_out_your_name,
+    file: song_calling_out_your_name,
+    desc: 'MANIA, Tom Wigley, Lottie Jones',
+    duration: '3:54',
   },
   {
     id: 6,
-    name: 'Once In Paris',
-    image: album_onceInParis,
-    file: song_onceInParis,
-    desc: 'Pumpupthemind',
-    duration: '2:12',
+    name: 'Comet',
+    image: album_comet,
+    file: song_comet,
+    desc: 'Skybreak, Keepsake',
+    duration: '3:50',
   },
   {
     id: 7,
-    name: 'No Place To Go',
-    image: album_noPlaceToGo,
-    file: song_noPlaceToGo,
-    desc: 'SergePavkinMusic',
-    duration: '5:37',
+    name: 'Sugar Plumbin',
+    image: album_sugar_plumbin,
+    file: song_sugar_plumbin,
+    desc: 'Reece Taylor',
+    duration: '2:07',
   },
   {
-    id: 7,
-    name: 'Joyride Jamboree',
-    image: album_joyrideJamboree,
-    file: song_joyrideJamboree,
-    desc: 'Neura-Flow',
-    duration: '1:09',
+    id: 8,
+    name: 'Waves',
+    image: album_waves,
+    file: song_waves,
+    desc: 'AC13',
+    duration: '4:28',
+  },
+  {
+    id: 9,
+    name: 'twenty five',
+    image: album_twenty_five,
+    file: song_twenty_five,
+    desc: 'if found, Luma',
+    duration: '3:18',
+  },
+  {
+    id: 11,
+    name: 'Talk about',
+    image: album_talk_about,
+    file: song_talk_about,
+    desc: '21RoR',
+    duration: '2:15',
   },
 ];
