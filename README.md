@@ -2,7 +2,7 @@
 
 <div align="center">
   <br />
-    <img src="" width=80%>
+    <img src="./public/thumbnail.png" width=80%>
   <br />
 </div>
 
